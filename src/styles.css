@@ -1,0 +1,22 @@
+@import 'remixicon/fonts/remixicon.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small helpers */
+.container-max {
+  @apply max-w-6xl mx-auto px-4;
+}
+.header-image {
+  @apply relative w-full min-h-[16rem] md:min-h-[20rem] lg:min-h-[24rem] bg-cover bg-center flex items-center justify-center py-10 pb-40;
+}
+.header-image::before {
+  content: "";
+  @apply absolute inset-0 bg-black/40;
+}
+
+/* Content wrapper inside hero */
+.header-image-content {
+  @apply relative z-10 max-w-4xl px-6 text-white;
+}
