@@ -12,7 +12,7 @@ export default function Footer() {
           el('div', { class: 'w-8 h-8 flex items-center justify-center' },
             el('i', { class: 'ri-building-line text-primary text-xl' })
           ),
-          el('span', { class: 'text-xl font-bold text-white' }, 'Golden Recruiter')
+          el('span', { class: 'text-xl font-bold text-white' }, 'Golden Force')
         ),
         el('p', { class: 'text-gray-400 mb-6' },
           'Your trusted partner in professional recruitment and outsourcing solutions, delivering excellence across all industries.'
@@ -85,7 +85,7 @@ export default function Footer() {
 
     // Footer bottom
     el('div', { class: 'border-t border-primary mt-12 pt-8 text-center text-gray-400' },
-      el('p', {}, '©' + new Date().getFullYear() + ' Golden Recruiter. All rights reserved.')
+      el('p', {}, '©' + new Date().getFullYear() + ' Golden Force. All rights reserved.')
     )
   );
 }

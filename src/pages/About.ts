@@ -7,25 +7,8 @@ export default function About() {
     el(
       'div',
       { class: 'header-image-content space-y-6' },
-      el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'Golden Recruiter'),
-      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Client-Based Business Solutions in Global Recruitment & Outsourcing.'),
-      el('div', { class: 'border-l-4 border-primary pl-4' },
-        el('p', { class: 'italic text-base md:text-lg text-gray-300' }, '“We don\'t just fill roles — we create tailored workforce solutions that support growth, agility, and long-term success.”')
-      ),
-      el(
-        'ul',
-        { class: 'list-disc pl-6 text-gray-300 space-y-1' },
-        el('li', {}, 'Customized recruitment strategies aligned with your goals'),
-        el('li', {}, 'End-to-end outsourcing across sales, support, and tech'),
-        el('li', {}, 'Reliable, scalable remote teams built for performance')
-      ),
-      el(
-        'button',
-        {
-          class: 'bg-primary text-white font-semibold py-3 px-10 rounded hover:bg-neutral-300 transition',
-        },
-        'Get Quote'
-      )
+      el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'About Golden Force'),
+      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Pioneering excellence in recruitment and outsourcing since our founding, with a commitment to transforming businesses through exceptional talent solutions.')
     )
   );
 
@@ -211,7 +194,7 @@ export default function About() {
         el(
           'p',
           { class: 'text-xl text-gray-600 mb-8 leading-relaxed' },
-          'At Golden Recruiters, we take pride in our dynamic and globally diverse team. With professionals representing more than 20 countries, each team member brings a unique set of skills, cultural insights, and industry knowledge that fuels our innovation and drives impactful staffing solutions.'
+          'At Golden Force, we take pride in our dynamic and globally diverse team. With professionals representing more than 20 countries, each team member brings a unique set of skills, cultural insights, and industry knowledge that fuels our innovation and drives impactful staffing solutions.'
         ),
         el(
           'h3',
@@ -226,7 +209,7 @@ export default function About() {
         el(
           'p',
           { class: 'text-gray-600 mb-6 leading-relaxed' },
-          "We nurture a collaborative, inclusive culture where every voice is valued, every contribution matters, and success is shared. It's this unity in diversity that makes Golden Recruiters a trusted partner in workforce solutions."
+          "We nurture a collaborative, inclusive culture where every voice is valued, every contribution matters, and success is shared. It's this unity in diversity that makes Golden Force a trusted partner in workforce solutions."
         ),
 
         el(
@@ -252,8 +235,8 @@ export default function About() {
         'div',
         {},
         el('img', {
-          src: 'images/team.jpg',
-          alt: 'Golden Recruiters diverse team photo',
+          src: 'images/golden.jpg',
+          alt: 'Golden Force diverse team photo',
           class: 'w-full rounded-xl shadow-lg object-cover',
         })
       )
@@ -261,24 +244,26 @@ export default function About() {
   )
 );
 
+const button = el(
+  'button',
+  {
+    class:
+      'bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-12 rounded shadow-lg transition',
+    type: 'button',
+  },
+  'Get a Quote'
+);
 
-  const parallaxCTA = el(
-    'section',
-    {
-      class:
-        'parallax bg-[url("/images/about-cta.jpg")] bg-fixed bg-center bg-no-repeat bg-cover py-40 flex flex-col items-center justify-center text-white text-center px-6',
-    },
-    el('h2', { class: 'text-5xl font-extrabold mb-4 drop-shadow-lg' }, 'Recruitment Designed for Your Growth'),
-    el('p', { class: 'max-w-2xl mb-8 text-lg drop-shadow-md' }, 'Let us find your next great team member while you focus on growing your business.'),
-    el(
-      'button',
-      {
-        class:
-          'bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-12 rounded shadow-lg transition',
-      },
-      'Get a Quote'
-    )
-  );
+const parallaxCTA = el(
+  'section',
+  {
+    class:
+      'parallax bg-[url("/images/about-hero.jpg")] bg-fixed bg-center bg-no-repeat bg-cover py-40 flex flex-col items-center justify-center text-white text-center px-6',
+  },
+  el('h2', { class: 'text-5xl font-extrabold mb-4 drop-shadow-lg' }, 'Recruitment Designed for Your Growth'),
+  el('p', { class: 'max-w-2xl mb-8 text-lg drop-shadow-md' }, 'Let us find your next great team member while you focus on growing your business.'),
+  button
+);
 
   const root = el('div', {}, hero, foundation, team, parallaxCTA);
   return root;

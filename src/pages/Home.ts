@@ -9,7 +9,7 @@ export default function Home() {
   el(
     'div',
     { class: 'header-image-content space-y-6' },
-    el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'Golden Recruiter'),
+    el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'Golden Force'),
     el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Client-Based Business Solutions in Global Recruitment & Outsourcing.'),
     el('div', { class: 'border-l-4 border-primary pl-4' },
       el('p', { class: 'italic text-base md:text-lg text-gray-300' }, '“We don\'t just fill roles — we create tailored workforce solutions that support growth, agility, and long-term success.”')
@@ -36,7 +36,7 @@ export default function Home() {
 
       // Title & description
       el('div', { class: 'text-center mb-16' },
-        el('h2', { class: 'text-4xl font-bold text-gray-900 mb-4' }, 'Why Choose Golden Recruiters'),
+        el('h2', { class: 'text-4xl font-bold text-gray-900 mb-4' }, 'Why Choose Golden Force'),
         el('p', { class: 'text-xl text-gray-600 max-w-3xl mx-auto' },
           'What sets us apart is our people-first approach. We take the time to understand each client’s unique requirements and each candidate’s strengths — ensuring the perfect match. Our global reach, combined with local market expertise, enables us to deliver results quickly and effectively.'
         )
@@ -132,57 +132,152 @@ export default function Home() {
     )
   );
 
-  const businessProcessOutsourcing = el('section', {
-    class: 'parallax-bg py-32 relative',
-    style: "background-image: url('images/1.jpg')"
-  },
+  const parallax = el(
+    'section',
+    {
+      class: 'parallax-bg bg-fixed py-32 relative',
+      style: "background-image: url('images/home-hero.jpg')",
+    },
     // Neutral Dark Overlay
     el('div', { class: 'absolute inset-0 bg-black/60' }),
 
-    el('div', { class: 'relative z-10 container mx-auto px-6 text-center text-white' },
-      el('h2', { class: 'text-4xl md:text-5xl font-bold mb-6' }, 'Redefining Business Process Outsourcing'),
-      el('p', { class: 'max-w-3xl mx-auto text-lg text-gray-200 mb-12' },
-        'We know the weight of a first impression. At Golden Recruiters, all of our clients trust us to represent the ' +
-        'face of their company. We are happy to function as the initial outreach provider of our clients, as well as ' +
-        'providing them with qualified appointments to boost their revenue.'
+    // Content
+    el(
+      'div',
+      { class: 'relative z-10 container mx-auto px-6 text-center text-white' },
+      el(
+        'h2',
+        { class: 'text-4xl md:text-5xl font-bold mb-6' },
+        "Don't Believe it? Hear For Yourself"
+      ),
+      el(
+        'h3',
+        { class: 'text-lg md:text-xl max-w-3xl mx-auto' },
+        "Talents from our pool is your secret weapon to your company's excellent workforce"
       ),
 
-      el('div', { class: 'max-w-4xl mx-auto' },
-        el('div', { class: 'grid md:grid-cols-3 gap-8 mt-12' },
+      // Audio players
+      el(
+        'section',
+        { class: 'max-w-4xl mx-auto' },
+        el(
+          'div',
+          { class: 'grid md:grid-cols-3 gap-8 mt-12' },
 
-          el('div', { class: 'p-6' },
-            el('div', { class: 'w-12 h-12 flex items-center justify-center bg-white/20 rounded-full mx-auto mb-4' },
-              el('i', { class: 'ri-chat-1-line text-white text-xl' })
-            ),
-            el('h3', { class: 'text-xl font-semibold mb-3' }, 'Efficient Communication'),
-            el('p', { class: 'text-gray-100' },
-              'Our vetted team of telemarketers, appointment-setters, and support agents speak flawless English and leave ' +
-              'a great first impression.'
+          // Yolanda
+          el(
+            'div',
+            { class: 'p-6 text-center' },
+            el(
+              'audio',
+              { controls: 'true', class: 'w-full max-w-xs mx-auto' },
+              el('source', { src: 'audio/Yolanda.m4a', type: 'audio/mpeg' }),
+              'Your browser does not support the audio element.'
             )
           ),
 
-          el('div', { class: 'p-6' },
-            el('div', { class: 'w-12 h-12 flex items-center justify-center bg-white/20 rounded-full mx-auto mb-4' },
-              el('i', { class: 'ri-bar-chart-line text-white text-xl' })
-            ),
-            el('h3', { class: 'text-xl font-semibold mb-3' }, 'Proven Track Record'),
-            el('p', { class: 'text-gray-100' },
-              'We’ve driven consistent revenue and built trust through meaningful B2B relationships — and our clients ' +
-              'stay because it works.'
+          // Mitchelle
+          el(
+            'div',
+            { class: 'p-6 text-center' },
+            el(
+              'audio',
+              { controls: 'true', class: 'w-full max-w-xs mx-auto' },
+              el('source', { src: 'audio/Mitchelle.m4a', type: 'audio/mpeg' }),
+              'Your browser does not support the audio element.'
             )
           ),
 
-          el('div', { class: 'p-6' },
-            el('div', { class: 'w-12 h-12 flex items-center justify-center bg-white/20 rounded-full mx-auto mb-4' },
-              el('i', { class: 'ri-check-double-line text-white text-xl' })
-            ),
-            el('h3', { class: 'text-xl font-semibold mb-3' }, 'Tangible Deliverables'),
-            el('p', { class: 'text-gray-100' },
-              'We provide qualified appointments and measurable outcomes, helping clients grow faster and more ' +
-              'efficiently.'
+          // Richard
+          el(
+            'div',
+            { class: 'p-6 text-center' },
+            el(
+              'audio',
+              { controls: 'true', class: 'w-full max-w-xs mx-auto' },
+              el('source', { src: 'audio/richard.mp3', type: 'audio/mpeg' }),
+              'Your browser does not support the audio element.'
             )
           )
+        )
+      )
+    )
+  );
 
+  const testimonials = el(
+    'section',
+    { class: 'py-20 bg-gradient-to-b from-primary/5 to-white' },
+    el(
+      'div',
+      { class: 'container mx-auto px-6' },
+      el(
+        'div',
+        { class: 'text-center mb-16' },
+        el('h2', { class: 'text-4xl font-bold text-gray-900 mb-4' }, 'Client Success Stories'),
+        el(
+          'p',
+          { class: 'text-xl text-gray-600' },
+          'Hear from companies who have transformed their operations with our services'
+        )
+      ),
+
+      el(
+        'div',
+        { class: 'grid md:grid-cols-3 gap-8' },
+
+        el(
+          'div',
+          {
+            class:
+              'testimonial-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2',
+          },
+          el(
+            'div',
+            { class: 'flex items-center mb-6' },
+            /* avatar or icon could go here */
+            el('div', {}, el('h4', { class: 'font-semibold' }, 'Sarah Chen'), el('p', { class: 'text-sm text-gray-600' }, 'CEO, TechFlow Solutions'))
+          ),
+          el(
+            'p',
+            { class: 'text-gray-700 italic' },
+            `"Golden Recruiter transformed our customer support operations. Their team delivered exceptional talent that reduced our response times by 60% while maintaining the highest quality standards."`
+          )
+        ),
+
+        el(
+          'div',
+          {
+            class:
+              'testimonial-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2',
+          },
+          el(
+            'div',
+            { class: 'flex items-center mb-6' },
+            el('div', {}, el('h4', { class: 'font-semibold' }, 'Marcus Rodriguez'), el('p', { class: 'text-sm text-gray-600' }, 'VP Sales, GrowthCorp'))
+          ),
+          el(
+            'p',
+            { class: 'text-gray-700 italic' },
+            `"The sales representatives they provided exceeded all expectations. Our revenue increased by 40% in the first quarter, and their professionalism is unmatched."`
+          )
+        ),
+
+        el(
+          'div',
+          {
+            class:
+              'testimonial-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2',
+          },
+          el(
+            'div',
+            { class: 'flex items-center mb-6' },
+            el('div', {}, el('h4', { class: 'font-semibold' }, 'Emily Watson'), el('p', { class: 'text-sm text-gray-600' }, 'Founder, InnovateHub'))
+          ),
+          el(
+            'p',
+            { class: 'text-gray-700 italic' },
+            `"Their software engineering team became an integral part of our development process. The quality of work and communication has been outstanding from day one."`
+          )
         )
       )
     )
@@ -213,7 +308,8 @@ const ctaSection = el('section', { class: 'py-20 bg-primary' },
     hero,
     whyChooseSection,
     factsAndFigures,
-    businessProcessOutsourcing,
+    parallax,
+    testimonials,
     ctaSection
   );
 }
