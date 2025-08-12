@@ -10,16 +10,19 @@ export default function Footer() {
       el('div', {},
         el('div', { class: 'flex items-center space-x-2 mb-6' },
           el('div', { class: 'w-8 h-8 flex items-center justify-center' },
-            el('i', { class: 'ri-building-line text-primary text-xl' })
-          ),
-          el('span', { class: 'text-xl font-bold text-white' }, 'Golden Force')
+            el('img', {
+              src: '/images/logo.svg',
+              alt: 'Golden Force Logo',
+              class: 'h-auto',
+            }),),
+          el('span', { class: 'text-xl font-bold text-primary' }, 'Golden Force')
         ),
         el('p', { class: 'text-gray-400 mb-6' },
           'Your trusted partner in professional recruitment and outsourcing solutions, delivering excellence across all industries.'
         ),
         el('div', { class: 'flex space-x-4' },
           el('a', {
-            href: 'https://www.linkedin.com/in/samuel-mumba-57b05a24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+            href: 'https://www.linkedin.com/in/company/the-golden-talents/',
             target: '_blank',
             rel: 'noopener noreferrer',
             class: 'w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors'
@@ -33,7 +36,7 @@ export default function Footer() {
             class: 'w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors'
           }, el('i', { class: 'ri-twitter-fill text-white' })),
           el('a', {
-            href: 'https://www.instagram.com/the_golden_recruiter?igsh=ZzE1dTY0ZXM1ZnA%3D&utm_source=qr',
+            href: 'https://www.instagram.com/the_goldenforce?igsh=ZzE1dTY0ZXM1ZnA%3D&utm_source=qr',
             target: '_blank',
             rel: 'noopener noreferrer',
             class: 'w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors'
@@ -45,11 +48,11 @@ export default function Footer() {
       el('div', {},
         el('h3', { class: 'text-lg font-semibold mb-6 text-white' }, 'Services'),
         el('ul', { class: 'space-y-3 text-gray-400' },
-          el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Sales Representatives')),
-          el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Customer Support')),
-          el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Virtual Assistants')),
-          el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Software Engineering')),
-          el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Data Entry'))
+          el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Sales Representatives')),
+          el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Customer Support')),
+          el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Virtual Assistants')),
+          el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Software Engineering')),
+          el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Admin Services'))
         )
       ),
 
@@ -60,7 +63,7 @@ export default function Footer() {
           el('li', {}, el('a', { href: '/about', class: 'hover:text-white transition-colors' }, 'About Us')),
           el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Services')),
           el('li', {}, el('a', { href: '/contact', class: 'hover:text-white transition-colors' }, 'Contact')),
-         // el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Privacy Policy'))
+          // el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Privacy Policy'))
         )
       ),
 

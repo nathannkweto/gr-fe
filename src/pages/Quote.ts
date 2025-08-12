@@ -99,12 +99,12 @@ export default function QuoteFormSection() {
               )
             ),
 
-            // Data Entry
+            // Admin Services
             el('div', { class: 'border border-gray-200 rounded-lg p-6 hover:border-primary/30 transition-colors' },
               el('div', { class: 'flex items-start space-x-4' },
                 el('input', { type: 'checkbox', id: 'data-entry', name: 'services', value: 'data-entry', class: 'service-checkbox mt-1' }),
                 el('div', { class: 'flex-1' },
-                  el('label', { for: 'data-entry', class: 'block font-medium text-gray-900 mb-2 cursor-pointer' }, 'Data Entry'),
+                  el('label', { for: 'data-entry', class: 'block font-medium text-gray-900 mb-2 cursor-pointer' }, 'Admin Services'),
                   el('p', { class: 'text-sm text-gray-600' }, 'Accurate data processing, migration, cleansing, and digital transformation support.')
                 )
               )
@@ -331,7 +331,7 @@ export default function QuoteFormSection() {
           ),
 
           // Right side buttons
-          el('div', { class: 'flex space-x-4' },
+          el('div', { class: 'flex space-x-8' },
             el('button', { type: 'button', id: 'save-draft-btn', class: 'px-6 py-3 border border-primary text-primary rounded hover:bg-primary/5 transition-colors whitespace-nowrap' }, 'Save Draft'),
             el('button', {
               type: 'button', id: 'next-btn',

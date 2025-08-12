@@ -9,7 +9,7 @@ export default function About() {
     el(
       'div',
       { class: 'header-image-content space-y-6' },
-      el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'About Golden Force'),
+      el('h1', { class: 'text-4xl md:text-6xl font-bold leading-tight' }, 'About Golden Force'),
       el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Pioneering excellence in recruitment and staffing since our founding, with a commitment to transforming businesses through exceptional talent solutions.')
     )
   );
@@ -27,7 +27,7 @@ export default function About() {
         el(
           'p',
           { class: 'text-xl text-gray-600 max-w-3xl mx-auto' },
-          'The principles and values that guide every decision we make and every relationship we build'
+          'The principles and values that guide every decision we make and every relationship we build.'
         )
       ),
       el(
@@ -281,9 +281,9 @@ const parallaxCTA = el(
   },
   // Content
   el( 'div', { class: 'relative z-10 container mx-auto px-6 text-center text-white' },
-    el('h2', { class: 'text-4xl font-bold font-bold mb-4 drop-shadow-lg' }, 'Recruitment Designed for Your Growth'),
-  el('p', { class: 'max-w-2xl mb-8 text-lg drop-shadow-md' }, 'Let us find your next great team member while you focus on growing your business.'),
-  button
+    el('h2', { class: 'text-4xl font-bold mb-4 drop-shadow-lg' }, 'Recruitment Designed for Your Growth'),
+  el('p', { class: 'max-w-2xl mx-auto mb-8 text-lg drop-shadow-md' }, 'Let us find your next great team member while you focus on growing your business.'),
+    button
   ),
   
 );

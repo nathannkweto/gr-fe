@@ -93,7 +93,7 @@ export default function Home(): HTMLElement {
           el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4' },
             el('i', { class: 'ri-user-line text-primary text-2xl' })
           ),
-          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '45' }, '0'),
+          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '20' }, '0'),
           el('p', { class: 'text-gray-600 font-medium' }, 'Active Personnel')
         ),
 
@@ -166,7 +166,7 @@ export default function Home(): HTMLElement {
             el(
               'audio',
               { controls: 'true', class: 'w-full max-w-xs mx-auto' },
-              el('source', { src: 'audio/Yolanda.m4a', type: 'audio/mpeg' }),
+              el('source', { src: 'audio/richard.mp3', type: 'audio/mpeg' }),
               'Your browser does not support the audio element.'
             )
           ),
@@ -190,7 +190,7 @@ export default function Home(): HTMLElement {
             el(
               'audio',
               { controls: 'true', class: 'w-full max-w-xs mx-auto' },
-              el('source', { src: 'audio/richard.mp3', type: 'audio/mpeg' }),
+              el('source', { src: 'audio/Yolanda.m4a', type: 'audio/mpeg' }),
               'Your browser does not support the audio element.'
             )
           )
