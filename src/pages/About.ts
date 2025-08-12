@@ -1,4 +1,5 @@
 import { el } from '../utils/dom';
+import { navigate } from '../router';
 
 export default function About() {
   const hero = el(
@@ -271,7 +272,11 @@ const button = el(
 );
 
 button.onclick = () => {
-  window.location.href = '/quote';
+  try {
+      navigate('/quote');
+    } catch (err) {
+      window.location.href = '/quote';
+    };
 };
 
 const parallaxCTA = el(

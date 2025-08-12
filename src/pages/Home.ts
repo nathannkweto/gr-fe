@@ -1,5 +1,6 @@
 // src/components/Home.ts
 import { el } from '../utils/dom';
+import { navigate } from '../router';
 
 export default function Home(): HTMLElement {
   const hero = el(
@@ -204,7 +205,11 @@ export default function Home(): HTMLElement {
   }, 'Request a Quote') as HTMLButtonElement;
 
   button.onclick = () => {
-    window.location.href = '/quote';
+    try {
+        navigate('/quote');
+      } catch (err) {
+        window.location.href = '/quote';
+      };
   };
 
   const ctaSection = el('section', { class: 'py-20 bg-primary' },

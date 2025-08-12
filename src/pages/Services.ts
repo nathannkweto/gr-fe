@@ -57,7 +57,11 @@ const button = el(
 );
 
 button.onclick = () => {
-  window.location.href = '/';
+  try {
+    navigate('/quote');
+  } catch (err) {
+    window.location.href = '/quote';
+  };
 };
 
 
