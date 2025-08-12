@@ -57,7 +57,7 @@ const button = el(
 );
 
 button.onclick = () => {
-  window.location.href = '/quote';
+  window.location.href = '/';
 };
 
 
