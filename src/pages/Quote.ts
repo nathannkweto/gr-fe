@@ -14,7 +14,7 @@ export default function QuoteFormSection() {
     el('div', { class: 'text-center mb-12' },
       el('h1', { class: 'text-4xl font-bold text-gray-900 mb-4' }, 'Request Your Custom Quote'),
       el('p', { class: 'text-xl text-gray-600 max-w-2xl mx-auto' },
-        'Tell us about your requirements and we\'ll provide a tailored solution for your recruitment and outsourcing needs.'
+        'Tell us about your requirements and we\'ll provide a tailored solution for your recruitment and staffing needs.'
       )
     ),
 
@@ -323,7 +323,7 @@ export default function QuoteFormSection() {
           // Prev
           el('button', {
             type: 'button', id: 'prev-btn',
-            class: 'px-6 py-3 border border-gray-300 text-gray-700 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap',
+            class: 'px-6 py-3 border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors whitespace-nowrap',
             style: 'display: none;'
           },
             el('div', { class: 'w-4 h-4 flex items-center justify-center mr-2 inline-block' }, el('i', { class: 'ri-arrow-left-line' })),
@@ -332,17 +332,17 @@ export default function QuoteFormSection() {
 
           // Right side buttons
           el('div', { class: 'flex space-x-4' },
-            el('button', { type: 'button', id: 'save-draft-btn', class: 'px-6 py-3 border border-primary text-primary !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap' }, 'Save Draft'),
+            el('button', { type: 'button', id: 'save-draft-btn', class: 'px-6 py-3 border border-primary text-primary rounded hover:bg-primary/5 transition-colors whitespace-nowrap' }, 'Save Draft'),
             el('button', {
               type: 'button', id: 'next-btn',
-              class: 'bg-primary text-white px-6 py-3 !rounded-button hover:bg-secondary transition-colors whitespace-nowrap'
+              class: 'bg-primary items-center justify-between flex text-white px-6 py-3 rounded hover:bg-secondary transition-colors whitespace-nowrap'
             },
               'Next Step',
-              el('div', { class: 'w-4 h-4 flex items-center justify-center ml-2 inline-block' }, el('i', { class: 'ri-arrow-right-line' }))
+              el('div', { class: 'w-4 ml-2' }, el('i', { class: 'ri-arrow-right-line' }))
             ),
             el('button', {
               type: 'submit', id: 'submit-btn',
-              class: 'bg-primary text-white px-8 py-3 !rounded-button hover:bg-secondary transition-colors whitespace-nowrap',
+              class: 'bg-primary text-white px-8 py-3 rounded hover:bg-secondary transition-colors whitespace-nowrap',
               style: 'display: none;'
             }, 'Submit Quote Request')
           )
@@ -358,11 +358,11 @@ export default function QuoteFormSection() {
       el('h3', { class: 'text-xl font-semibold text-gray-900 mb-2' }, 'Quote Request Submitted!'),
       el('p', { id: 'modal-message', class: 'text-gray-600 mb-6' }, 'Thank you for your request. Our team will review your requirements and get back to you within 24 hours with a customized quote.'),
       el('div', { class: 'space-y-3' },
-        el('button', { id: 'download-summary', class: 'w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-secondary transition-colors whitespace-nowrap' }, 'Download Summary'),
+        el('button', { id: 'download-summary', class: 'w-full bg-primary text-white px-6 py-3 rounded hover:bg-secondary transition-colors whitespace-nowrap' }, 'Download Summary'),
         el('a', {
           href: '/',
           'data-readdy': 'true',
-          class: 'block w-full border border-gray-300 text-gray-700 px-6 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap'
+          class: 'block w-full border border-gray-300 text-gray-700 px-6 py-3 rounded hover:bg-gray-50 transition-colors whitespace-nowrap'
         }, 'Return to Home')
       )
     )

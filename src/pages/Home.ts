@@ -1,35 +1,30 @@
+// src/components/Home.ts
 import { el } from '../utils/dom';
 
-export default function Home() {
+export default function Home(): HTMLElement {
   const hero = el(
-  'div',
-  { 
-    class: 'header-image bg-[url("/images/home-hero.jpg")]' 
-  },
-  el(
     'div',
-    { class: 'header-image-content space-y-6' },
-    el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'Golden Force'),
-    el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Client-Based Business Solutions in Global Recruitment & Outsourcing.'),
-    el('div', { class: 'border-l-4 border-primary pl-4' },
-      el('p', { class: 'italic text-base md:text-lg text-gray-300' }, '“We don\'t just fill roles — we create tailored workforce solutions that support growth, agility, and long-term success.”')
-    ),
+    {
+      class: 'header-image bg-[url("/images/home-hero.jpg")]'
+    },
+
     el(
-      'ul',
-      { class: 'list-disc pl-6 text-gray-300 space-y-1' },
-      el('li', {}, 'Customized recruitment strategies aligned with your goals'),
-      el('li', {}, 'End-to-end outsourcing across sales, support, and tech'),
-      el('li', {}, 'Reliable, scalable remote teams built for performance')
-    ),
-    el(
-      'button',
-      {
-        class: 'bg-primary text-white font-semibold py-3 px-10 rounded hover:bg-neutral-300 transition',
-      },
-      'Get Quote'
+      'div',
+      { class: 'header-image-content space-y-6' },
+      el('h1', { class: 'text-4xl md:text-6xl font-bold leading-tight' }, 'Golden Force'),
+      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Client-Based Business Solutions in Global Recruitment & Staffing.'),
+      el('div', { class: 'border-l-4 border-primary pl-4' },
+        el('p', { class: 'italic text-base md:text-lg text-gray-300' }, '“We don\'t just fill roles — we create tailored workforce solutions that support growth, agility, and long-term success.”')
+      ),
+      el(
+        'ul',
+        { class: 'list-disc pl-6 text-gray-300 space-y-1' },
+        el('li', {}, 'Customized recruitment strategies aligned with your goals'),
+        el('li', {}, 'End-to-end recruiting across sales, support, and tech'),
+        el('li', {}, 'Reliable, scalable remote teams built for performance')
+      )
     )
-  )
-);
+  ) as HTMLElement;
 
   const whyChooseSection = el('section', { class: 'py-20 bg-gray-50' },
     el('div', { class: 'container mx-auto px-6' },
@@ -79,7 +74,7 @@ export default function Home() {
         )
       )
     )
-  );
+  ) as HTMLElement;
 
   const factsAndFigures = el('section', { class: 'py-20 bg-white' },
     el('div', { class: 'container mx-auto px-6' },
@@ -98,8 +93,8 @@ export default function Home() {
           el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4' },
             el('i', { class: 'ri-user-line text-primary text-2xl' })
           ),
-          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '150' }, '0'),
-          el('p', { class: 'text-gray-600 font-medium' }, 'Active Agent')
+          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '45' }, '0'),
+          el('p', { class: 'text-gray-600 font-medium' }, 'Active Personnel')
         ),
 
         // Call Center Geographies
@@ -107,8 +102,8 @@ export default function Home() {
           el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4' },
             el('i', { class: 'ri-map-pin-line text-primary text-2xl' })
           ),
-          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '7' }, '0'),
-          el('p', { class: 'text-gray-600 font-medium' }, 'Call Center Geographies')
+          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '15' }, '0'),
+          el('p', { class: 'text-gray-600 font-medium' }, 'Locations')
         ),
 
         // Languages
@@ -116,7 +111,7 @@ export default function Home() {
           el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4' },
             el('i', { class: 'ri-translate-2 text-primary text-2xl' })
           ),
-          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '8' }, '0'),
+          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '5' }, '0'),
           el('p', { class: 'text-gray-600 font-medium' }, 'Languages')
         ),
 
@@ -125,12 +120,12 @@ export default function Home() {
           el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4' },
             el('i', { class: 'ri-thumb-up-line text-primary text-2xl' })
           ),
-          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '98' }, '0'),
+          el('div', { class: 'text-4xl font-bold text-primary mb-2 counter', 'data-target': '95' }, '0'),
           el('p', { class: 'text-gray-600 font-medium' }, 'Client Satisfaction %')
         )
       )
     )
-  );
+  ) as HTMLElement;
 
   const parallax = el(
     'section',
@@ -202,114 +197,117 @@ export default function Home() {
         )
       )
     )
-  );
-
-  const testimonials = el(
-    'section',
-    { class: 'py-20 bg-gradient-to-b from-primary/5 to-white' },
-    el(
-      'div',
-      { class: 'container mx-auto px-6' },
-      el(
-        'div',
-        { class: 'text-center mb-16' },
-        el('h2', { class: 'text-4xl font-bold text-gray-900 mb-4' }, 'Client Success Stories'),
-        el(
-          'p',
-          { class: 'text-xl text-gray-600' },
-          'Hear from companies who have transformed their operations with our services'
-        )
-      ),
-
-      el(
-        'div',
-        { class: 'grid md:grid-cols-3 gap-8' },
-
-        el(
-          'div',
-          {
-            class:
-              'testimonial-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2',
-          },
-          el(
-            'div',
-            { class: 'flex items-center mb-6' },
-            /* avatar or icon could go here */
-            el('div', {}, el('h4', { class: 'font-semibold' }, 'Sarah Chen'), el('p', { class: 'text-sm text-gray-600' }, 'CEO, TechFlow Solutions'))
-          ),
-          el(
-            'p',
-            { class: 'text-gray-700 italic' },
-            `"Golden Recruiter transformed our customer support operations. Their team delivered exceptional talent that reduced our response times by 60% while maintaining the highest quality standards."`
-          )
-        ),
-
-        el(
-          'div',
-          {
-            class:
-              'testimonial-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2',
-          },
-          el(
-            'div',
-            { class: 'flex items-center mb-6' },
-            el('div', {}, el('h4', { class: 'font-semibold' }, 'Marcus Rodriguez'), el('p', { class: 'text-sm text-gray-600' }, 'VP Sales, GrowthCorp'))
-          ),
-          el(
-            'p',
-            { class: 'text-gray-700 italic' },
-            `"The sales representatives they provided exceeded all expectations. Our revenue increased by 40% in the first quarter, and their professionalism is unmatched."`
-          )
-        ),
-
-        el(
-          'div',
-          {
-            class:
-              'testimonial-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2',
-          },
-          el(
-            'div',
-            { class: 'flex items-center mb-6' },
-            el('div', {}, el('h4', { class: 'font-semibold' }, 'Emily Watson'), el('p', { class: 'text-sm text-gray-600' }, 'Founder, InnovateHub'))
-          ),
-          el(
-            'p',
-            { class: 'text-gray-700 italic' },
-            `"Their software engineering team became an integral part of our development process. The quality of work and communication has been outstanding from day one."`
-          )
-        )
-      )
-    )
-  );
+  ) as HTMLElement;
 
   const button = el('button', {
-  class: 'bg-white text-primary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap',
-}, 'Request a Quote');
+    class: 'bg-white text-primary px-8 py-4 rounded text-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap',
+  }, 'Request a Quote') as HTMLButtonElement;
 
-button.onclick = () => {
-  window.location.href = '/quote';
-};
+  button.onclick = () => {
+    window.location.href = '/quote';
+  };
 
-const ctaSection = el('section', { class: 'py-20 bg-primary' },
-  el('div', { class: 'container mx-auto px-6 text-center' },
-    el('h2', { class: 'text-4xl font-bold text-white mb-6' }, 'Ready to Transform Your Business?'),
-    el('p', { class: 'text-xl text-gray-100 mb-8 max-w-2xl mx-auto' },
-      'Join hundreds of companies who have already revolutionized their ' +
-      'operations with our expert recruitment and outsourcing solutions.'
-    ),
-    button
-  )
-);
+  const ctaSection = el('section', { class: 'py-20 bg-primary' },
+    el('div', { class: 'container mx-auto px-6 text-center' },
+      el('h2', { class: 'text-4xl font-bold text-white mb-6' }, 'Ready to Transform Your Business?'),
+      el('p', { class: 'text-xl text-gray-100 mb-8 max-w-2xl mx-auto' },
+        'Join companies who have already revolutionized their ' +
+        'operations with our expert recruitment and staffing solutions.'
+      ),
+      button
+    )
+  ) as HTMLElement;
 
-  return el(
-    'div',
-    {},
-    hero,
-    whyChooseSection,
-    factsAndFigures,
-    parallax,
-    testimonials,
-    ctaSection
-  );
+  // --- COUNTERS: improved, robust animation ---
+  (function setupCounters(): void {
+    type CounterEl = HTMLElement & { dataset: DOMStringMap };
+
+    function animateCounters(counters: CounterEl[], durationMs: number): void {
+      counters.forEach((counter: CounterEl) => {
+        const rawTarget = counter.getAttribute('data-target') ?? '0';
+        const target = Number(rawTarget);
+        if (Number.isNaN(target) || target <= 0) {
+          counter.textContent = String(Math.max(0, Math.floor(target)));
+          return;
+        }
+
+        const startTime = performance.now();
+        const startValue = 0;
+
+        const step = (now: number): void => {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / durationMs, 1);
+          const eased = easeOutCubic(progress);
+          const value = Math.floor(startValue + (target - startValue) * eased);
+          counter.textContent = String(value);
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            counter.textContent = String(target); // ensure exact final
+          }
+        };
+
+        window.requestAnimationFrame(step);
+      });
+    }
+
+    function easeOutCubic(t: number): number {
+      // t in [0,1]
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    function initObserver(): boolean {
+      const statsEl = document.getElementById('stats-section');
+      if (!statsEl) return false;
+
+      const nodeList = statsEl.querySelectorAll<HTMLElement>('.counter');
+      const counters = Array.from(nodeList) as CounterEl[];
+      if (counters.length === 0) return true;
+
+      let hasAnimated = false;
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && !hasAnimated) {
+            hasAnimated = true;
+            animateCounters(counters, 1600);
+            observer.disconnect();
+            break;
+          }
+        }
+      }, { threshold: 0.5 });
+
+      observer.observe(statsEl);
+      return true;
+    }
+
+    // Ensure we attempt initialization either immediately or after DOM ready.
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        if (!initObserver()) {
+          // retry a few times in case elements are mounted later (SPA situations)
+          let tries = 0;
+          const maxTries = 10;
+          const retry = (): void => {
+            tries += 1;
+            if (initObserver() || tries >= maxTries) return;
+            window.setTimeout(retry, 200);
+          };
+          window.setTimeout(retry, 200);
+        }
+      });
+    } else {
+      if (!initObserver()) {
+        let tries = 0;
+        const maxTries = 10;
+        const retry = (): void => {
+          tries += 1;
+          if (initObserver() || tries >= maxTries) return;
+          window.setTimeout(retry, 200);
+        };
+        window.setTimeout(retry, 200);
+      }
+    }
+  })();
+
+  return el('div', {}, hero, whyChooseSection, factsAndFigures, parallax, ctaSection) as HTMLElement;
 }

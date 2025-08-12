@@ -1,7 +1,7 @@
 import { el } from '../utils/dom';
 
 export default function Footer() {
-  return el('div', { class: 'bg-gray-900 mx-auto px-6 py-10' },
+  return el('div', { class: 'bg-gray-900 mx-auto px-20 py-10' },
 
     // Main grid
     el('div', { class: 'grid md:grid-cols-4 gap-8' },
@@ -57,10 +57,10 @@ export default function Footer() {
       el('div', {},
         el('h3', { class: 'text-lg font-semibold mb-6 text-white' }, 'Company'),
         el('ul', { class: 'space-y-3 text-gray-400' },
-          el('li', {}, el('a', { href: 'about.html', class: 'hover:text-white transition-colors' }, 'About Us')),
-          el('li', {}, el('a', { href: 'services.html', class: 'hover:text-white transition-colors' }, 'Services')),
-          el('li', {}, el('a', { href: 'contact.html', class: 'hover:text-white transition-colors' }, 'Contact')),
-          el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Privacy Policy'))
+          el('li', {}, el('a', { href: '/about', class: 'hover:text-white transition-colors' }, 'About Us')),
+          el('li', {}, el('a', { href: '/services', class: 'hover:text-white transition-colors' }, 'Services')),
+          el('li', {}, el('a', { href: '/contact', class: 'hover:text-white transition-colors' }, 'Contact')),
+         // el('li', {}, el('a', { href: '#', class: 'hover:text-white transition-colors' }, 'Privacy Policy'))
         )
       ),
 
@@ -74,7 +74,7 @@ export default function Footer() {
           el('input', {
             type: 'email',
             placeholder: 'Enter your email',
-            class: 'bg-gray-800 flex-1 px-4 py-2 border border-gray-700 rounded-l-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm'
+            class: 'bg-gray-800 flex-1 px-4 py-2 border border-gray-700 rounded-l-lg focus:ring-2 text-gray-400 focus:ring-primary focus:border-transparent text-sm'
           }),
           el('button', {
             class: 'bg-primary px-4 py-2 rounded-r-lg hover:bg-secondary transition-colors whitespace-nowrap'

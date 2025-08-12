@@ -4,11 +4,13 @@ export default function About() {
   const hero = el(
     'div',
     { class: 'header-image bg-[url("/images/about-hero.jpg")]' },
+    // Neutral Dark Overlay
+    el('div', { class: 'absolute inset-0 bg-black/20' }),
     el(
       'div',
       { class: 'header-image-content space-y-6' },
       el('h1', { class: 'text-4xl md:text-6xl font-extrabold leading-tight' }, 'About Golden Force'),
-      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Pioneering excellence in recruitment and outsourcing since our founding, with a commitment to transforming businesses through exceptional talent solutions.')
+      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Pioneering excellence in recruitment and staffing since our founding, with a commitment to transforming businesses through exceptional talent solutions.')
     )
   );
 
@@ -42,7 +44,7 @@ export default function About() {
           el(
             'div',
             { class: 'p-8' },
-            el('div', { class: 'w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4' }, el('i', { class: 'ri-target-line text-primary text-xl' })),
+            el('div', { class: 'w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4' }, el('i', { class: 'ri-team-line text-primary text-xl' })),
             el('h3', { class: 'text-2xl font-bold text-gray-900 mb-4' }, 'Our Mission'),
             el(
               'p',
@@ -103,7 +105,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '⭐'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' },
+              el('i', { class: 'ri-star-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Excellence'),
             el(
               'p',
@@ -115,7 +119,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '✅'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, 
+              el('i', { class: 'ri-shield-check-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Accountability'),
             el('p', { class: 'text-gray-600 text-sm' }, 'We take full ownership of our promises and our performance, holding ourselves responsible for our actions and outcomes.')
           ),
@@ -123,7 +129,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '🔒'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, 
+              el('i', { class: 'ri-lock-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Integrity'),
             el(
               'p',
@@ -135,7 +143,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '🤝'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, 
+              el('i', { class: 'ri-heart-2-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Human Connection'),
             el(
               'p',
@@ -147,7 +157,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '🤝'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, 
+              el('i', { class: 'ri-hand-heart-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Respect'),
             el(
               'p',
@@ -159,7 +171,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '👥'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, 
+              el('i', { class: 'ri-team-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Team Spirit'),
             el('p', { class: 'text-gray-600 text-sm' }, 'Collaboration is the heartbeat of our agency. We support one another and celebrate every success as a unified team.')
           ),
@@ -167,7 +181,9 @@ export default function About() {
           el(
             'div',
             { class: 'text-center' },
-            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, '🔍'),
+            el('div', { class: 'w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4 text-2xl' }, 
+              el('i', { class: 'ri-search-line text-primary' })
+            ),
             el('h4', { class: 'text-lg font-semibold text-gray-900 mb-2' }, 'Transparency'),
             el('p', { class: 'text-gray-600 text-sm' }, 'We believe in open communication and honesty, building trust through clear, forthright interactions.')
           )
@@ -248,21 +264,28 @@ const button = el(
   'button',
   {
     class:
-      'bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-12 rounded shadow-lg transition',
+      'bg-white hover:bg-primary hover:text-white text-primary font-semibold py-4 px-12 rounded shadow-lg transition',
     type: 'button',
   },
   'Get a Quote'
 );
 
+button.onclick = () => {
+  window.location.href = '/quote';
+};
+
 const parallaxCTA = el(
   'section',
   {
-    class:
-      'parallax bg-[url("/images/about-hero.jpg")] bg-fixed bg-center bg-no-repeat bg-cover py-40 flex flex-col items-center justify-center text-white text-center px-6',
+    class: 'bg-primary py-32 relative',
   },
-  el('h2', { class: 'text-5xl font-extrabold mb-4 drop-shadow-lg' }, 'Recruitment Designed for Your Growth'),
+  // Content
+  el( 'div', { class: 'relative z-10 container mx-auto px-6 text-center text-white' },
+    el('h2', { class: 'text-4xl font-bold font-bold mb-4 drop-shadow-lg' }, 'Recruitment Designed for Your Growth'),
   el('p', { class: 'max-w-2xl mb-8 text-lg drop-shadow-md' }, 'Let us find your next great team member while you focus on growing your business.'),
   button
+  ),
+  
 );
 
   const root = el('div', {}, hero, foundation, team, parallaxCTA);
