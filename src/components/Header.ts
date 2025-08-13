@@ -29,7 +29,7 @@ export default function Header(): HTMLElement {
   const desktopNav = el('nav', { class: 'hidden md:flex space-x-4' },
     ...links.map(l => el('a', {
       href: l.href,
-      class: 'text-primary hover:text-secondary transition-colors',
+      class: 'text-white hover:text-primary transition-colors',
     }, l.label))
   ) as HTMLElement;
 
@@ -38,15 +38,15 @@ export default function Header(): HTMLElement {
     type: 'button',
     'aria-label': 'Toggle menu',
     'aria-expanded': 'false',
-    class: 'md:hidden inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary',
+    class: 'md:hidden inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-secondary focus:outline-none focus:ring-none',
   },
-    el('i', { class: 'ri-menu-3-line text-2xl' }
+    el('i', { class: 'ri-menu-3-line text-2xl focus' }
     )
   ) as HTMLButtonElement;
 
   // mobile menu (hidden by default)
   const mobileMenu = el('div', {
-    class: 'absolute right-4 mt-2 w-48 bg-gray-900 shadow-lg md:hidden hidden z-50',
+    class: 'absolute right-0 mt-2 w-48 bg-gray-900 shadow-lg md:hidden hidden z-50',
     role: 'menu',
     'aria-hidden': 'true'
   },
@@ -54,7 +54,7 @@ export default function Header(): HTMLElement {
       ...links.map(l => el('a', {
         href: l.href,
         role: 'menuitem',
-        class: 'block px-4 py-2 text-sm text-primary hover:text-secondary hover:bg-gray-800 transition-colors',
+        class: 'block px-4 py-2 text-sm text-white hover:text-primary hover:bg-gray-800 transition-colors',
       }, l.label))
     )
   ) as HTMLElement;
