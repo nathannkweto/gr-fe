@@ -64,6 +64,15 @@ button.onclick = () => {
   };
 };
 
+const header = el('main', { class: 'container mx-auto px-6 pt-12 max-w-4xl' },
+    // Header
+    el('div', { class: 'text-center' },
+      el('h1', { class: 'text-4xl font-bold text-gray-900 mb-4' }, 'Services'),
+      el('p', { class: 'text-xl text-gray-600 max-w-2xl mx-auto' },
+        'Select what suits your needs from our range of services.'
+      )
+    ),
+  )
 
 function makeServiceCard(s: ServiceSpec) {
   const card = el(
@@ -107,12 +116,15 @@ function makeServiceCard(s: ServiceSpec) {
 
 export default function ServicesSection() {
   const gridChildren = SERVICES.map(s => makeServiceCard(s));
-  return el(
+  const services = el(
     'section',
-    { id: 'services', class: 'py-20 bg-gray-50' },
+    { id: 'services', class: 'py-20 pt-10 bg-gray-50' },
     el('div', { class: 'container mx-auto px-6' },
       el('div', { class: 'grid md:grid-cols-2 lg:grid-cols-3 gap-8' }, ...gridChildren),
       el('div', { class: 'text-center' }, button)
     ),
-  );
+  )
+  const wrapper = el('div', {}, header, services);
+
+  return wrapper;
 }
