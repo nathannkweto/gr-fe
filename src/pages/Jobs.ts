@@ -19,7 +19,7 @@ export default function Jobs() {
                         "Continuously update knowledge of our offerings and target market."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> in a cold calling, telemarketing, or inside sales role.",
+                        "Proven experience in a cold calling, telemarketing, or inside sales role.",
                         "Exceptional verbal communication and active listening skills.",
                         "Resilient personality with a proven ability to handle rejection and maintain a positive attitude.",
                         "Strong persuasive and negotiation skills with a goal-oriented mindset.",
@@ -45,7 +45,7 @@ export default function Jobs() {
                         "Assist with project management and team communication via tools like Slack or Asana."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> as an Administrative Assistant, Virtual Assistant, or similar role.",
+                        "Proven experience as an Administrative Assistant, Virtual Assistant, or similar role.",
                         "Excellent written and verbal communication skills.",
                         "High proficiency in G Suite (Docs, Sheets, Slides, Calendar) and/or Microsoft Office.",
                         "Strong internet research skills and tech-savviness with ability to learn new software quickly.",
@@ -71,9 +71,9 @@ export default function Jobs() {
                         "Ensure cross-browser compatibility and mobile responsiveness."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> as a Front End Developer or similar role.",
+                        "Proven experience as a Front End Developer or similar role.",
                         "Strong proficiency in fundamental web languages: HTML5, CSS3, and modern JavaScript (ES6+).",
-                        "<strong>Extensive experience</strong> with at least one modern JS framework/library such as <strong>React</strong>, Vue.js, or Angular.",
+                        "Extensive experience with at least one modern JS framework/library such as React, Vue.js, or Angular.",
                         "Experience with CSS preprocessors (SASS, LESS) and CSS frameworks (Tailwind, Bootstrap).",
                         "Familiarity with RESTful APIs and asynchronous request handling.",
                         "Experience with version control systems, specifically Git."
@@ -97,9 +97,9 @@ export default function Jobs() {
                         "Implement security and data protection measures."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> as a Back End Developer or similar role.",
-                        "Strong proficiency with <strong>server-side languages</strong> such as <strong>Node.js, Python (Django/Flask), Ruby on Rails, Java, or PHP</strong>.",
-                        "<strong>Extensive experience</strong> designing and interacting with databases (SQL & NoSQL).",
+                        "Proven experience as a Back End Developer or similar role.",
+                        "Strong proficiency with server-side languages such as Node.js, Python (Django/Flask), Ruby on Rails, Java, or PHP.",
+                        "Extensive experience designing and interacting with databases (SQL & NoSQL).",
                         "Experience building and consuming RESTful APIs.",
                         "Understanding of accessibility, security compliance, and user authentication.",
                         "Proficient understanding of code versioning tools, such as Git."
@@ -123,10 +123,10 @@ export default function Jobs() {
                         "See a project through from conception to finished product, meeting both technical and consumer needs."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> as a Full Stack Developer or similar role.",
-                        "Strong front-end skills (HTML, CSS, JavaScript) and experience with a front-end framework (e. g., <strong>React, Angular, Vue</strong>).",
-                        "Strong back-end skills with a server-side language (e.e., <strong>Node.js, Python, Ruby, Java</strong>).",
-                        "<strong>Extensive experience</strong> working with databases (both SQL and NoSQL).",
+                        "Proven experience as a Full Stack Developer or similar role.",
+                        "Strong front-end skills (HTML, CSS, JavaScript) and experience with a front-end framework (e. g., React, Angular, Vue).",
+                        "Strong back-end skills with a server-side language (e.e., Node.js, Python, Ruby, Java).",
+                        "Extensive experience working with databases (both SQL and NoSQL).",
                         "Experience with cloud services (AWS, Azure, GCP) and DevOps principles is a plus.",
                         "Ability to see the 'big picture' and understand how front-end and back-end integrate."
                     ]
@@ -141,7 +141,7 @@ export default function Jobs() {
                 description: {
                     about: "We are looking for a dedicated Angular Expert to design and build sophisticated single-page applications (SPAs). The ideal candidate will have deep, hands-on experience with the Angular framework and a passion for creating dynamic, high-performance user interfaces.",
                     responsibilities: [
-                        "Develop user interfaces for modern web applications using the <strong>Angular</strong> framework.",
+                        "Develop user interfaces for modern web applications using the Angular framework.",
                         "Build efficient and reusable front-end components and modules.",
                         "Implement complex application state management (e.g., using NgRx).",
                         "Ensure high performance and SEO-friendliness of applications.",
@@ -149,7 +149,7 @@ export default function Jobs() {
                         "Write tested, documented, and clean code following best practices."
                     ],
                     requirements: [
-                        "<strong>Proven, in-depth experience</strong> developing production applications with <strong>Angular (v2+)</strong>.",
+                        "Proven, in-depth experience developing production applications with Angular (v2+).",
                         "Strong understanding of TypeScript, RxJS, and the Angular CLI.",
                         "Experience with state management patterns and libraries (e.g., NgRx, Akita).",
                         "Proficiency in HTML5, CSS3, and preprocessors like SASS.",
@@ -175,7 +175,7 @@ export default function Jobs() {
                         "Track and report on key marketing metrics (engagement, traffic, leads)."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> in a marketing support role, either as a VA, coordinator, or specialist.",
+                        "Proven experience in a marketing support role, either as a VA, coordinator, or specialist.",
                         "Hands-on experience with major social media platforms for business (Meta, Instagram, LinkedIn, etc.).",
                         "Familiarity with email marketing tools (e.g., Mailchimp, ConvertKit).",
                         "Basic knowledge of SEO principles and content creation.",
@@ -201,7 +201,7 @@ export default function Jobs() {
                         "Stay up-to-date with the latest social media best practices, tools, and trends."
                     ],
                     requirements: [
-                        "<strong>Proven experience</strong> as a Social Media Manager, with a portfolio of successful campaigns.",
+                        "Proven experience as a Social Media Manager, with a portfolio of successful campaigns.",
                         "Excellent knowledge of Facebook, Twitter, LinkedIn, Pinterest, Instagram, TikTok, and other emerging platforms.",
                         "Experience with social media management and analytics tools (e.g., Hootsuite, Buffer, Sprout Social).",
                         "Strong copywriting and visual storytelling skills.",
@@ -227,8 +227,8 @@ export default function Jobs() {
                         "Iterate on designs based on user testing and feedback."
                     ],
                     requirements: [
-                        "<strong>Proven UI/UX design experience</strong> with a strong portfolio showcasing your process and finished work.",
-                        "Proficiency in design and prototyping tools such as <strong>Figma, Sketch, Adobe XD, or InVision</strong>.",
+                        "Proven UI/UX design experience with a strong portfolio showcasing your process and finished work.",
+                        "Proficiency in design and prototyping tools such as Figma, Sketch, Adobe XD, or InVision.",
                         "Strong understanding of user-centered design, testing methodologies, and accessibility standards.",
                         "Ability to present your designs and sell your solutions to various stakeholders.",
                         "Excellent visual design skills with sensitivity to user-system interaction.",
@@ -241,14 +241,24 @@ export default function Jobs() {
 
   let currentJobId: string | null = null;
 
-  // Create containers dynamically
-  const header = el("div", { class: "pt-10 grid text-center" },
+  // Header
+  const header = el("div", { class: "grid text-center" },
     el("h1", { class: "text-3xl font-bold text-gray-800" }, "Remote Job Opportunities"),
     el("p", { class: "text-gray-400 px-4 py-2" }, "Join our team of talented professionals working from around the world")
   );
-  const jobsListView = el("div", { id: "jobsListView", class: "grid grid-flow-row grid-cols-1 gap-5 py-5 m-5" });
-  const jobDetailView = el("div", { id: "jobDetailView", class: "job-detail-view", style: "display:none" },
-    el("button", { id: "backBtn", class: "back-btn" }, "← Back"),
+
+  // Job list view (visible by default)
+  const jobsListView = el("div", { 
+    id: "jobsListView", 
+    class: "grid grid-flow-row grid-cols-1 gap-5 py-5 m-5" 
+  });
+
+  // Job detail view (hidden by default)
+  const jobDetailView = el("div", { 
+      id: "jobDetailView", 
+      class: "job-detail-view hidden grid grid-flow-row grid-cols-1 p-5 m-5 rounded-xl shadow-md bg-white" 
+    },
+    el("button", { id: "backBtn", class: "apply-btn bg-gray-800 text-white text-center px-8 py-3 font-bold my-5 rounded-md hover:bg-white hover:text-gray-800 transition" }, "← Back"),
     el("div", { id: "jobDetailContent" })
   );
 
@@ -257,18 +267,21 @@ export default function Jobs() {
     jobsListView.innerHTML = "";
 
     jobs.forEach(job => {
-      const jobCard = el("div", { class: "rounded-xl shadow-sm bg-white p-5 md:flex grid grid-cols-1 items-center md:justify-between items-center" },
+      const jobCard = el("div", { class: "rounded-xl shadow-sm bg-white p-5 md:flex grid grid-cols-1 items-center md:justify-between" },
         el("div", { class: "job-info" },
           el("h3", { class: "text-gray-800 font-bold mb-2 text-xl" }, job.title),
           el("p", { class: "text-gray-400" }, job.location)
         ),
-        el("a", { href: "#", class: "view-job bg-primary text-white text-center px-8 py-3 my-5 rounded-md font-bold hover:bg-secondary transition", "data-id": job.id }, "Apply")
+        el("button", { 
+          class: "view-job bg-primary text-white text-center px-8 py-3 my-5 rounded-md font-bold hover:bg-secondary transition", 
+          "data-id": job.id 
+        }, "Apply")
       );
 
       jobCard.querySelector(".view-job")!.addEventListener("click", (e) => {
         e.preventDefault();
         currentJobId = job.id;
-        showJobDetail(job);
+        showJobDetail(job.id);
       });
 
       jobsListView.appendChild(jobCard);
@@ -276,28 +289,89 @@ export default function Jobs() {
   }
 
   // Render job detail
-  function showJobDetail(job: typeof jobs[number]) {
-    const jobDetailContent = jobDetailView.querySelector("#jobDetailContent")!;
-    jobDetailContent.innerHTML = `
-      <h2>${job.title}</h2>
-      <p><em>${job.location}</em></p>
-      <p>${job.description.about}</p>
-    `;
+function showJobDetail(jobId: string) {
+  const job = jobs.find(j => j.id === jobId);
 
+  if (job) {
+    const jobDetailContent = document.getElementById("jobDetailContent")!;
+    jobDetailContent.innerHTML = "";
+
+    // About the role
+    const aboutSection = el("div", { class: "mb-5" },
+      el("h3", { class:"font-bold text-xl mb-2 border-b pb-3" }, "About the Role"),
+      el("p", { class: "py-2" }, job.description.about)
+    );
+
+    // Responsibilities
+    const responsibilitiesSection = el("div", { class: "mb-5" },
+      el("h3", { class:"font-bold text-xl mb-2 border-b pb-3" }, "Key Responsibilities"),
+      el("ul", { class: "responsibilities list-disc px-5" },
+        ...job.description.responsibilities.map(resp =>
+          el("li", { class: "py-2" }, resp)
+        )
+      )
+    );
+
+    // Requirements
+    const requirementsSection = el("div", { class: "mb-5" },
+      el("h3", { class:"font-bold text-xl mb-2 border-b pb-3" }, "Required Experience & Skills"),
+      el("ul", { class: "requirements list-disc px-5" },
+        ...job.description.requirements.map(req =>
+          el("li", { class: "py-2" }, req)
+        )
+      )
+    );
+
+    // Apply button
+    const applyBtn = el("div", { class: "text-center" },
+        el("a", {
+      href: "/jobs/apply",
+      class: "apply-btn bg-primary text-white text-center px-8 py-3 my-5 rounded-md font-bold hover:bg-secondary transition",
+      "data-job": job.formTitle
+    }, "Apply Now"));
+
+    //applyBtn.addEventListener("click", (e) => {
+    //  e.preventDefault();
+    //  const jobType = applyBtn.getAttribute("data-job");
+    //});
+
+    // Full job detail container
+    const jobElement = el("div", { class: "job-category" },
+      el("div", { class: "job-header bg-primary mb-5 p-3 text-white rounded-lg py-3 md:flex grid grid-cols-1 items-center md:justify-between" },
+        el("h2", { class: "text-2xl font-bold p-5 flex items-center justify-center" },
+          el("i", { class: `${job.icon} icon` }),
+          " ",
+          job.title
+        ),
+        el("div", { class: "job-type bg-gray-600 text-white text-center p-2 rounded-full" }, "Remote")
+      ),
+      el("div", { class: "job-content" },
+        aboutSection,
+        responsibilitiesSection,
+        requirementsSection,
+        applyBtn
+      )
+    );
+
+    jobDetailContent.appendChild(jobElement);
+
+    // Toggle visibility
     jobsListView.style.display = "none";
     jobDetailView.style.display = "block";
   }
+}
+
 
   // Back button handler
   jobDetailView.querySelector("#backBtn")!.addEventListener("click", (e) => {
     e.preventDefault();
-    jobDetailView.style.display = "none";
-    jobsListView.style.display = "grid";
+    jobDetailView.classList.add("hidden");
+    jobsListView.classList.remove("hidden");
   });
 
   // Initial render
   renderJobListings();
 
-  // Return the root container for mounting
-  return el("div", { class: "w-2/3 md:px-20 mx-auto" }, header, jobsListView, jobDetailView);
+  // Return root container
+  return el("div", { class: "md:w-3/4 w-full md:px-20 mx-auto my-20" }, header, jobsListView, jobDetailView);
 }

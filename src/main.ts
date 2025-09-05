@@ -19,7 +19,7 @@ register('/services', Services);
 register('/contact', Contact);
 register('/quote', Quote);
 register('/jobs', Jobs);
-register('jobs/apply', Application);
+register('/jobs/apply', Application);
 
 
 // 404 fallback (optional)

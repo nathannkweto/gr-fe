@@ -1,6 +1,19 @@
 import { el } from '../utils/dom';
 
 export default function About() {
+  const applyBtn = el(
+    'button',
+    {
+      class:
+        'bg-primary hover:bg-white hover:text-primary text-white font-semibold py-4 px-12 rounded shadow-lg transition',
+      type: 'button',
+    },
+    'Join Our Team'
+  );
+
+  applyBtn.onclick = () => {
+    window.location.href = '/jobs';
+  };
   const hero = el(
     'div',
     { class: 'header-image bg-[url("/images/about-hero.jpg")]' },
@@ -10,8 +23,9 @@ export default function About() {
       'div',
       { class: 'header-image-content space-y-6' },
       el('h1', { class: 'text-4xl md:text-6xl font-bold leading-tight' }, 'About Golden Force'),
-      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Pioneering excellence in recruitment and staffing since our founding, with a commitment to transforming businesses through exceptional talent solutions.')
-    )
+      el('p', { class: 'text-lg md:text-xl text-gray-200' }, 'Pioneering excellence in recruitment and staffing since our founding, with a commitment to transforming businesses through exceptional talent solutions.'),
+      applyBtn
+    ),
   );
 
   const foundation = el(
