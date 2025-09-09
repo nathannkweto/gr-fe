@@ -290,7 +290,7 @@ export default function Jobs() {
       jobCard.querySelector(".view-job")!.addEventListener("click", (e) => {
         e.preventDefault();
         currentJobId = job.id;
-        showJobDetail(job.id);
+        showJobDetail(currentJobId);
       });
 
       jobsListView.appendChild(jobCard);
