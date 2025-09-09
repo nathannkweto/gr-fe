@@ -256,9 +256,18 @@ export default function Jobs() {
   // Job detail view (hidden by default)
   const jobDetailView = el("div", { 
       id: "jobDetailView", 
-      class: "job-detail-view hidden grid grid-flow-row grid-cols-1 p-5 m-5 rounded-xl shadow-md bg-white" 
+      class: "job-detail-view hidden grid grid-flow-row grid-cols-1 p-5 md:m-5 md:rounded-xl md:shadow-md md:bg-white" 
     },
-    el("button", { id: "backBtn", class: "apply-btn bg-gray-800 text-white text-center px-8 py-3 font-bold my-5 rounded-md hover:bg-white hover:text-gray-800 transition" }, "← Back"),
+    el(
+    "button",
+    {
+      id: "backBtn",
+      href: "/jobs/apply",
+      class:
+        "apply-btn bg-gray-800 text-white text-center px-8 py-3 font-bold my-5 rounded-md hover:bg-white hover:text-gray-800 transition"
+    },
+    "← Back"
+  ),
     el("div", { id: "jobDetailContent" })
   );
 
