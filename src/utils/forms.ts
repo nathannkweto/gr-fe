@@ -1,7 +1,7 @@
 // forms.ts
 
 const scriptUrl =
-  "https://script.google.com/macros/s/AKfycbzrCbK6bHBJw29Ur-hC_EuRaaofXN7QSxaPpevtDCYMZmDOqa5w5xJmpKI4xHHfCkNhBA/exec";
+  "https://script.google.com/macros/s/AKfycbysjlDcnkpCMmEH5bUAZDi-uPtkeH4ojjqQNSn-u7MVBF42cRV2STWQwcf1zd2MJN-iFQ/exec";
 
 // convert ArrayBuffer -> base64 (chunked to avoid argument limits)
 function arrayBufferToBase64(buffer: ArrayBuffer): string {
@@ -137,3 +137,96 @@ export async function submitJobForm(form: HTMLFormElement): Promise<void> {
   }
 }
 
+// Submit the quote request form
+export async function submitQuoteForm(form: HTMLFormElement): Promise<void> {
+  console.log("submitQuoteForm: started", form);
+
+  // --- Step 1: Services ---
+  const services = Array.from(form.querySelectorAll<HTMLInputElement>("input[name='services']:checked"))
+    .map(input => input.value);
+
+  // --- Step 2: Project Details ---
+  const projectScope = form.querySelector<HTMLInputElement | HTMLTextAreaElement>("textarea[name='project-scope']")?.value || "";
+  const startDate = form.querySelector<HTMLInputElement>("input[name='start-date']")?.value || "";
+  const projectDuration = form.querySelector<HTMLInputElement>("input[name='project-duration']")?.value || "";
+  const budget = form.querySelector<HTMLInputElement>("input[name='budget-input']")?.value || "";
+  const teamSize = form.querySelector<HTMLInputElement>("input[name='team-size']")?.value || "";
+
+  // --- Step 3: Company Info ---
+  const companyName = form.querySelector<HTMLInputElement>("input[name='company-name']")?.value || "";
+  const industry = form.querySelector<HTMLInputElement>("input[name='industry']")?.value || "";
+  const companySize = form.querySelector<HTMLInputElement>("input[name='company-size']")?.value || "";
+  const location = form.querySelector<HTMLInputElement>("input[name='location']")?.value || "";
+  const contactName = form.querySelector<HTMLInputElement>("input[name='contact-name']")?.value || "";
+  const contactTitle = form.querySelector<HTMLInputElement>("input[name='contact-title']")?.value || "";
+  const contactEmail = form.querySelector<HTMLInputElement>("input[name='contact-email']")?.value || "";
+  const contactPhone = form.querySelector<HTMLInputElement>("input[name='contact-phone']")?.value || "";
+
+  // --- Step 4: Requirements ---
+  const skillsRequired = form.querySelector<HTMLInputElement>("textarea[name='skills-required']")?.value || "";
+  const languageRequirements = form.querySelector<HTMLInputElement>("input[name='language-requirements']")?.value || "";
+  const workingHours = form.querySelector<HTMLInputElement>("input[name='working-hours']")?.value || "";
+  const timezone = form.querySelector<HTMLInputElement>("input[name='timezone']")?.value || "";
+  const additionalNotes = form.querySelector<HTMLTextAreaElement>("textarea[name='additional-notes']")?.value || "";
+  const referralSource = form.querySelector<HTMLInputElement>("input[name='referral-source']")?.value || "";
+
+  try {
+    const payload = {
+      formType: "quoteRequest",
+      services,
+      "project-scope": projectScope,
+      "start-date": startDate,
+      "project-duration": projectDuration,
+      "budget-input": budget,
+      "team-size": teamSize,
+      "company-name": companyName,
+      industry,
+      "company-size": companySize,
+      location,
+      "contact-name": contactName,
+      "contact-title": contactTitle,
+      "contact-email": contactEmail,
+      "contact-phone": contactPhone,
+      "skills-required": skillsRequired,
+      "language-requirements": languageRequirements,
+      "working-hours": workingHours,
+      timezone,
+      "additional-notes": additionalNotes,
+      "referral-source": referralSource,
+    };
+
+    console.log("submitQuoteForm: sending payload", payload);
+
+    const res = await fetch(scriptUrl, {
+      method: "POST",
+      body: JSON.stringify(payload),
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+      redirect: "follow",
+    });
+
+    const text = await res.text().catch(() => "");
+    console.log("submitQuoteForm: server response raw:", text);
+
+    if (!res.ok) {
+      throw new Error(`Form submission failed: ${res.status} ${res.statusText} - ${text}`);
+    }
+
+    try {
+      const json = JSON.parse(text);
+      console.log("submitQuoteForm: server json response:", json);
+    } catch {
+      // ignore parse errors
+    }
+
+    // ✅ Show success modal
+    const modal = document.getElementById("success-modal");
+    if (modal) modal.style.display = "flex";
+
+    form.reset();
+  } catch (err) {
+    console.error("submitQuoteForm error:", err);
+    throw err;
+  }
+}

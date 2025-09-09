@@ -1,5 +1,5 @@
 import { el } from '../utils/dom';
-import { api } from '../api'; // uses api.postQuote()
+import { submitQuoteForm } from '../utils/forms'; // uses api.postQuote()
 
 export default function QuoteFormSection() {
   const DRAFT_KEY = 'quoteFormDraft_v1';
@@ -561,8 +561,6 @@ export default function QuoteFormSection() {
     }
   }
 
-  const payload = collectFormObject();
-
   // optimistic UI: show loading
   showMessage('Submitting... Please wait.', 'info');
   // disable controls to prevent double submits
@@ -573,11 +571,10 @@ export default function QuoteFormSection() {
 
   try {
     // call api wrapper which throws on non-2xx
-    const data = await api.postQuote(payload);
+    await submitQuoteForm(form);
 
     // Only show success when api.postQuote resolved (2xx)
-    const backendMessage = (data && (data.message || data.msg)) ? (data.message || data.msg) : 'Quote request submitted successfully.';
-    modalMessage.textContent = backendMessage;
+    modalMessage.textContent = 'Thank you for your request. Our team will review your requirements and get back to you within 24 hours.';;
     successModal.style.display = '';
     clearDraft();
     localStorage.removeItem(STEP_KEY);
