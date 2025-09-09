@@ -21,7 +21,7 @@ export default function Header(): HTMLElement {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/services', label: 'Services' },
-    { href: '/quote', label: 'Get Quote' },
+    { href: '/jobs', label: 'Careers' },
     { href: '/contact', label: 'Contact' },
   ];
 
