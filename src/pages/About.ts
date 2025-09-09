@@ -1,5 +1,4 @@
 import { el } from '../utils/dom';
-import { navigate } from '../router';
 
 export default function About() {
   const applyBtn = el(
