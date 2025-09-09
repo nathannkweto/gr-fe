@@ -6,6 +6,8 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Quote from './pages/Quote';
+import Jobs from './pages/Jobs';
+import Application from './pages/Application';
 
 const app = document.getElementById('app')!;
 app.appendChild(PageLayout());
@@ -16,6 +18,9 @@ register('/about', About);
 register('/services', Services);
 register('/contact', Contact);
 register('/quote', Quote);
+register('/jobs', Jobs);
+register('/jobs/apply', Application);
+
 
 // 404 fallback (optional)
 register('/404', async () => {
